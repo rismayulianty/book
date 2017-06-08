@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/home','HomeController')
+
+//controller digunakan sebagai pengatur alur program
+//Latihan Controller
+Route::get('test','PrakerinController@percobaan');
+Route::get('praktek','PrakerinController@praktek');
+Route::get('prakerin','PrakerinController@prakerin');
+Route::get('kerkom','PrakerinController@kerkom');
+Route::get('ujikom','PrakerinController@ujikom');
+Route::get('halaman/{id}','PrakerinController@param');
+
+
+
